@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+
+<body>
+
+   <table cellspacing="0">
+      <tr>
+         <th>Product</th>
+         <th>Name</th>
+         <th>Rating</th>
+         <th>Comment</th>
+      </tr>
+         {% for review in reviews %}
+      </tr>
+          <td>{{review['Product']}}</td>
+         <td>{{review['Name']}}</td>
+         <td>{{review['Rating']}}</td>
+         <td>{{review['Comment']}} </td>
+       {% endfor %}
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
